@@ -1,0 +1,16 @@
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.exe
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.deps.json
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.runtimeconfig.json
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.runtimeconfig.dev.json
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.dll
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ref\ch22Garage.dll
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\bin\Debug\net5.0\ch22Garage.pdb
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.csproj.AssemblyReference.cache
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.AssemblyInfoInputs.cache
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.AssemblyInfo.cs
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.csproj.CoreCompileInputs.cache
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.dll
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ref\ch22Garage.dll
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.pdb
+C:\Users\heave\workspace\NewForce-Backend\cSharp\ch22Garage\obj\Debug\net5.0\ch22Garage.genruntimeconfig.cache
