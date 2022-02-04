@@ -25,10 +25,10 @@ namespace ch22Garage
             {
                 MainColor = "Burgundy"
             };
-            Cessna whiteCessna = new Cessna()
-            {
-                MainColor = "White"
-            };
+            // Cessna whiteCessna = new Cessna()
+            // {
+            //     MainColor = "White"
+            // };
 
             Ram silverRam = new Ram()
             {
@@ -41,12 +41,13 @@ namespace ch22Garage
             blackZero.Drive();
             burgundyTesla.Drive();
             silverRam.Drive();
-            whiteCessna.Drive();
+          
 
             // Zero fxs = new Zero ();
             // Tesla modelS = new Tesla ();
-            // Cessna mx410 = new Cessna();
-
+            Cessna mx410 = new Cessna();
+            mx410.MainColor = "white";
+            mx410.Drive();
             // fxs.Drive();
             // modelS.Drive();
 

@@ -2,9 +2,11 @@ using System;
 
 namespace ch22Garage
 {
+
+
     public class Tesla : Vehicle
     {
-       public double BatteryKWh { get; set; }
+    public double BatteryKWh { get; set; }
   
     public void ChargeBattery()
         {
