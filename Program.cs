@@ -1,59 +1,81 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ch22Garage
+namespace Garage
 {
-
     class Program
     {
-        static void Main(string[] args)
+        static void Main (string[] args)
         {
-
-            // Questions
-            //Would it make since to split up electric vehicles and gas vehicles 
-             
-            Zero blueZero = new Zero()
-            {
-                MainColor = "Midnight Blue"
+            Zero fxs = new Zero(){ 
+                Name = "Fxs Zero",
+                 CurrentChargePercentage = 100
+            };
+            Zero fx = new Zero() {
+                Name = "Fx Zero",
+                 CurrentChargePercentage = 75
+            };
+            Tesla modelS = new Tesla(){
+                Name = "ModelS Tesla",
+                CurrentChargePercentage = 50
             };
 
-            Zero blackZero = new Zero()
-            {
-                MainColor = "Black"
+            List<IElectricVehicle> electricVehicles = new List<IElectricVehicle>() {
+                fx, fxs, modelS
             };
 
-            Tesla burgundyTesla = new Tesla()
+            
+            Console.WriteLine("Electric Vehicles");
+            foreach(IElectricVehicle ev in electricVehicles)
             {
-                MainColor = "Burgundy"
-            };
-            // Cessna whiteCessna = new Cessna()
-            // {
-            //     MainColor = "White"
-            // };
+                Console.WriteLine($"The {ev.Name} charge is {ev.CurrentChargePercentage}.");
+            }
 
-            Ram silverRam = new Ram()
+
+
+            foreach(IElectricVehicle ev in electricVehicles)
             {
-                MainColor = "Silver"
+                // This should charge the vehicle to 100%
+                ev.ChargeBattery();
+            }
+
+            foreach(IElectricVehicle ev in electricVehicles)
+            {
+                Console.WriteLine($"The {ev.Name} battery is charged {ev.CurrentChargePercentage}");
+            }
+
+            /***********************************************/
+
+            Ram ram = new Ram (){
+                  Name = "Ram",
+                CurrentTankPercentage = 100
+            };
+            Cessna cessna150 = new Cessna (){
+                  Name = "Cessna 150",
+                CurrentTankPercentage = 75
             };
 
+            List<IGasVehicle> gasVehicles = new List<IGasVehicle>() {
+                ram, cessna150
+            };
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Gas Vehicles");
+            foreach(IGasVehicle gv in gasVehicles)
+            {
+                Console.WriteLine($"The {gv.Name} tank is {gv.CurrentTankPercentage} %");
+            }
 
+            foreach(IGasVehicle gv in gasVehicles)
+            {
+                // This should completely refuel the gas tank
+                gv.RefuelTank();
+            }
 
-            blueZero.Drive();
-            blackZero.Drive();
-            burgundyTesla.Drive();
-            silverRam.Drive();
-          
-
-            // Zero fxs = new Zero ();
-            // Tesla modelS = new Tesla ();
-            Cessna mx410 = new Cessna();
-            mx410.MainColor = "white";
-            mx410.Drive();
-            // fxs.Drive();
-            // modelS.Drive();
-
-
+            foreach(IGasVehicle gv in gasVehicles)
+            {
+                Console.WriteLine($"The {gv.Name} is now charged to {gv.CurrentTankPercentage}%");
+            }
         }
-
     }
 }
 

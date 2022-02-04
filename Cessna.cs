@@ -1,15 +1,28 @@
 using System;
 
-namespace ch22Garage
+namespace Garage
 {
-    public class Cessna : Vehicle
+    public class Cessna : Vehicle, IGasVehicle
     {
+            
     
         public double FuelCapacity { get; set; }
+        public int CurrentTankPercentage { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+               
+            if (CurrentTankPercentage < 100)
+            {
+
+            CurrentTankPercentage = 100;
+
+            }
+            else
+            {
+                CurrentTankPercentage = 100;
+
+            }
         }
 
 
